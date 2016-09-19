@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+
+
+import time
+
+
+class Config:
+    mysql_host = ""
+    mysql_user = "root"
+    mysql_password = ''
+    mysql_dbname = "ygdy8"
+    mysql_port = 3306
+    mysql_charset = 'utf8'
+    # mysql重试次数
+    mysql_retry_times = 5
+    # mysql 连接池 最大 连接数
+    mysql_max_cached = 5
+
+    url_main = 'http://www.ygdy8.net'
+    sleep_time = 3600
+    headers_path = '/mnt/crawler/ygdy8/'
+    headers_referer = 'http://www.ygdy8.net/'
+
+    time_now = time.strftime('%Y-%m-%d %H:%M:%S')
